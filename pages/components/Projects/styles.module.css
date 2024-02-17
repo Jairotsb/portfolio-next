@@ -1,0 +1,49 @@
+.name {
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.cardLink{
+    text-decoration: none;
+}
+
+.card {
+    width: 100%;
+    border:  1px solid #1E40AF;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover{
+    background-color: #1E40AF;
+}
+
+.infoCard{
+    display: flex; 
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.githubInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.data {
+    float: right;
+}
+
+.iconData{
+    margin: 0 0.4rem 0 1rem;
+}
+
+.language {
+    margin: 1.8rem 1rem 0 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+}

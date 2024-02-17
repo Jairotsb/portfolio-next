@@ -1,9 +1,9 @@
 ---
-title: Markdown Examples
-date: 2021/3/19
+title: Exemplo 
+date: 2024/2/17
 description: View examples of all possible Markdown options.
 tag: web development
-author: You
+author: Jairo tunisse
 ---
 
 # Markdown Examples
