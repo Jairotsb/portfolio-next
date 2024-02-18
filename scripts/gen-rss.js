@@ -11,6 +11,7 @@ async function generate() {
   });
 
   const posts = await fs.readdir(path.join(__dirname, "..", "pages", "blog"));
+  console.log(`${__dirname}../pages/blog`)
 
   await Promise.all(
     posts.map(async (name) => {
@@ -23,7 +24,7 @@ async function generate() {
 
       feed.item({
         title: frontmatter.data.title,
-        url: "/posts/" + name.replace(/\.mdx?/, ""),
+        url: "/blog/" + name.replace(/\.mdx?/, ""),
         date: frontmatter.data.date,
         description: frontmatter.data.description,
         categories: frontmatter.data.tag.split(", "),
