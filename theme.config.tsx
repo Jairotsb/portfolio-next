@@ -8,6 +8,7 @@ export default {
       </small>
       <style jsx>{`
         footer {
+          text-align: center;
           margin-top: 4rem;
         }
         a {

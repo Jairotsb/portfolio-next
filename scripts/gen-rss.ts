@@ -14,7 +14,7 @@ async function generate() {
   console.log(`${__dirname}../pages/blog`)
 
   await Promise.all(
-    posts.map(async (name) => {
+    posts.map(async (name: string) => {
       if (name.startsWith("index.")) return;
 
       const content = await fs.readFile(
