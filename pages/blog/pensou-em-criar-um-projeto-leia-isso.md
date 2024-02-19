@@ -1,6 +1,6 @@
 ---
 title: Pensou em criar um projeto? Leia isso.
-date: 2021/3/18
+date: 2024/2/18
 description: O objetivo deste post é mostrar que, temos que desenvolver melhor um projeto após realmente valer a pena cria-lo...
 tag: soft-skills
 author: Jairo Tunisse
