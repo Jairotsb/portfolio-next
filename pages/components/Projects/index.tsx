@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { api } from "../../../lib/api";
 import { GitPullRequest, Star } from "phosphor-react";
 
-export function Projects() {
+export default function Projects() {
   interface RepositoryProps {
     id: number;
     name: string;
