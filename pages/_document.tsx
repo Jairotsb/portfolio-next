@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   const meta = {
     title: "Jairo Tunisse - Desenvolvedor",
-    description: "Olá, me chamo Jairo, Tenho 22 anos. Atualmente trabalho na EEAR",
+    description: "Olá, me chamo Jairo, Tenho 22 anos. Atualmente trabalho na EEAR...",
     image: "https://github.com/Jairotsb.png",
   };
 
