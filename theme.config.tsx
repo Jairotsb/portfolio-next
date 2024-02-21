@@ -1,6 +1,9 @@
 const YEAR = new Date().getFullYear();
 
+
 export default {
+  darkMode: true,
+  readMore: "Ver Mais",
   footer: (
     <footer>
       <small>

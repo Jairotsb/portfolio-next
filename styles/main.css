@@ -20,7 +20,6 @@ article {
 
 .work-link {
   text-decoration: none;
-  color: #fff;
 }
 
 .work-link:hover {
@@ -73,4 +72,13 @@ article {
 
 hr {
   border-color: #2a60aa !important;
+}
+
+span.nx-cursor-pointer.nx-p-2.nx-text-current {
+  
+}
+
+path {
+  fill: var(--shiki-color-text)
+
 }
