@@ -1,3 +1,8 @@
+html, body, #__next{
+  height: 100% !important;
+  transition: all 0.2s !important;
+}
+
 .profile {
   width: 12rem;
   margin: 0.1rem 1.8rem 0 0;
@@ -10,6 +15,7 @@
 
 article {
   padding-top: 1rem !important;
+  transition: all 0.2s ease;
 }
 
 
@@ -67,7 +73,7 @@ article {
 }
 
 .social-media:hover {
-  border: 1px solid #fff;
+  border: 1px solid var(--shiki-color-text);
 }
 
 hr {
@@ -75,10 +81,22 @@ hr {
 }
 
 span.nx-cursor-pointer.nx-p-2.nx-text-current {
-  
+  border: 1px solid #2a60aa !important;
+  border-radius: 6px;
+  width: 3rem;
+  height: 2.5rem;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin: 0.4rem 0 0 1rem;
+  transition: all 0.2s; 
+}
+span.nx-cursor-pointer.nx-p-2.nx-text-current:hover{
+  background-color: #1E40AF;
+  color: #fff;
+  border: 0px;
 }
 
 path {
   fill: var(--shiki-color-text)
-
 }
