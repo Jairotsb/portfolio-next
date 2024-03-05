@@ -4,6 +4,7 @@ const YEAR = new Date().getFullYear();
 export default {
   darkMode: true,
   readMore: "Ver Mais",
+  dateFormatter: date => `Criado em ${date.toLocaleDateString()}`, 
   footer: (
     <footer>
       <small>

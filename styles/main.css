@@ -100,3 +100,9 @@ span.nx-cursor-pointer.nx-p-2.nx-text-current:hover{
 path {
   fill: var(--shiki-color-text)
 }
+
+.text-legend {
+  font-size: 0.6rem;
+  margin-top: 0;
+  padding: 0;
+}
