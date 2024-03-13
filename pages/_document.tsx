@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: "Jairo Tunisse | Desenvolvedor Full Stack",
     description: "Olá, me chamo Jairo, Tenho 22 anos. Sou programador há mais de 4 anos e atuo como desenvolvedor full-stack. Trabalho com desenvolvimento de sites, aplicativos, banco de dado e API Rest",
-    image: "./perfil.jpg",
+    image: "https://jairotunisse.dev/perfil.jpg",
   };
 
   return (
