@@ -32,15 +32,33 @@ export default function Projects() {
 
   return (
     <div className={styles.container}>
+      <div className={styles.githubHeader}>
+        <h6 className={styles.headerTitle}>Repositórios</h6>
+        <a
+          target="_blank"
+          href="https://github.com/Jairotsb"
+          className={styles.viewMore}
+        >
+          Ver mais
+        </a>
+      </div>
+      <div className={styles.divider}></div>
+
       {repositories.map((repository) => (
         <div key={repository.id} className={styles.card}>
-          <a className={styles.cardLink} href={`https://github.com/Jairotsb/${repository.name}`} target="_blank">
+          <a
+            className={styles.cardLink}
+            href={`https://github.com/Jairotsb/${repository.name}`}
+            target="_blank"
+          >
             <h3 className={styles.name}>{repository.name}</h3>
             <p className={styles.description}>{repository.description}</p>
             <div className={styles.infoCard}>
               <div className={styles.githubInfo}>
-                <Star  className={styles.iconData}/> {repository.stargazers_count}
-                <GitPullRequest className={styles.iconData} /> {repository.forks_count}
+                <Star className={styles.iconData} />{" "}
+                {repository.stargazers_count}
+                <GitPullRequest className={styles.iconData} />{" "}
+                {repository.forks_count}
               </div>
               <p className={styles.language}>#{repository.language}</p>
             </div>
