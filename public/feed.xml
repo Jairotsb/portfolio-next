@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Jairo Tunisse]]></title>
+        <description><![CDATA[Jairo Tunisse]]></description>
+        <link>https://www.jairotunisse.dev</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Mon, 05 Jan 2026 12:58:14 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Chega de cursos? Estratégias para Automatizar o Aprendizado e Ir Além dos Cursos tradicionais.]]></title>
+            <description><![CDATA[Este post tem como propósito evidenciar que é plenamente viável tornar-se um programador competente (ou iniciar nesse trajeto) sem desembolsar dinheiro em cursos online...]]></description>
+            <link>/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</link>
+            <guid isPermaLink="true">/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</guid>
+            <category><![CDATA[soft-skills]]></category>
+            <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
+            <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Pensou em criar um projeto? Leia isso.]]></title>
+            <description><![CDATA[O objetivo deste post é mostrar que, temos que desenvolver melhor um projeto após realmente valer a pena cria-lo...]]></description>
+            <link>/blog/pensou-em-criar-um-projeto-leia-isso</link>
+            <guid isPermaLink="true">/blog/pensou-em-criar-um-projeto-leia-isso</guid>
+            <category><![CDATA[soft-skills]]></category>
+            <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
+            <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[GUIA - Utilizando fontawesome com react e typescript]]></title>
+            <description><![CDATA[Neste artigo, irei descrever os passos para utilizar uma das bibiotecas de ícones mais legais...]]></description>
+            <link>/blog/guia-utilizando-fontawesome-com-typescript-e-react</link>
+            <guid isPermaLink="true">/blog/guia-utilizando-fontawesome-com-typescript-e-react</guid>
+            <category><![CDATA[soft-skills]]></category>
+            <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
+            <pubDate>Tue, 12 Mar 2024 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

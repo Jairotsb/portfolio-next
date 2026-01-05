@@ -1,0 +1,170 @@
+.container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.headerTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.divider {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #1E40AF;
+  margin: 0.2rem 0 1.4rem 0;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.timelineLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 30px;
+}
+
+.timelineDot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(30, 64, 175, 0.2);
+  border: 2px solid #1E40AF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1E40AF;
+  flex-shrink: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.currentDot {
+  background: #1E40AF;
+  color: white;
+  box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.2);
+}
+
+.timelineConnector {
+  width: 2px;
+  flex: 1;
+  min-height: 20px;
+  background: linear-gradient(to bottom, #1E40AF, rgba(30, 64, 175, 0.3));
+  margin: 4px 0;
+}
+
+.timelineContent {
+  flex: 1;
+  padding: 0.5rem 1rem 2rem 0.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.timelineContent:hover {
+  background: rgba(30, 64, 175, 0.05);
+}
+
+.timelineHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.role {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.period {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  background: rgba(30, 64, 175, 0.1);
+  color: #3B82F6;
+  border: 1px solid rgba(30, 64, 175, 0.2);
+  white-space: nowrap;
+}
+
+.currentPeriod {
+  background: #1E40AF;
+  color: white;
+  border-color: #1E40AF;
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.company {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3B82F6;
+}
+
+.location {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.description {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timelineHeader {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .role {
+    font-size: 0.9rem;
+  }
+
+  .companyInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .timelineContent {
+    padding: 0.5rem 0 1.5rem 0.5rem;
+  }
+
+  .headerTitle {
+    font-size: 1.2rem;
+  }
+}
