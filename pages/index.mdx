@@ -4,12 +4,40 @@ title: Início
 date: 2024-03-12
 ---
 
-import { DownloadSimple } from 'phosphor-react'
+import { DownloadSimple } from '@phosphor-icons/react'
+import { motion } from 'framer-motion'
+import Timeline from '../components/Timeline'
 
-# <p align="center"> Jairo Tunisse </p>
+export const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+}
+
+export const stagger = {
+  visible: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
+<motion.div
+  initial="hidden"
+  animate="visible"
+  variants={stagger}
+>
+
+<motion.h1
+  className="text-center"
+  variants={fadeIn}
+  transition={{ duration: 0.5 }}
+>
+  Jairo Tunisse
+</motion.h1>
 
 ---
 
+<motion.div variants={fadeIn} transition={{ duration: 0.5, delay: 0.1 }}>
 <img align="left" className="profile" src="https://github.com/Jairotsb.png"/>
  <div className="bio">
      💻 Desenvolvedor Full Stack com experiência em React, Node.js, Next.js e Docker, atuando no desenvolvimento de aplicações web modernas e soluções integradas. Atualmente, faço parte da seção de TI da Escola de Especialistas de Aeronáutica, onde aplico tecnologia para otimizar processos e garantir alta disponibilidade de sistemas críticos.
@@ -28,14 +56,24 @@ import { DownloadSimple } from 'phosphor-react'
 
      - DevOps e Docker
 
-     - Soluções em TI corporativa e governamental 
+     - Soluções em TI corporativa e governamental
 </div>
+</motion.div>
 
-<div className="links" align="center">
+<motion.div
+  className="links"
+  align="center"
+  variants={fadeIn}
+  transition={{ duration: 0.5, delay: 0.2 }}
+>
 
-    <span className="social-media">
+    <motion.span
+      className="social-media"
+      whileHover={{ scale: 1.05, borderColor: '#1E40AF' }}
+      whileTap={{ scale: 0.98 }}
+    >
       <a asChild href="https://twitter.com/JairoTunisse" target="_blank">
-          <svg 
+          <svg
             className="link-icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
@@ -44,12 +82,16 @@ import { DownloadSimple } from 'phosphor-react'
           </svg>
           @JairoTunisse
       </a>
-    </span> 
+    </motion.span>
 
- 
- <span className="social-media">
+
+ <motion.span
+   className="social-media"
+   whileHover={{ scale: 1.05, borderColor: '#1E40AF' }}
+   whileTap={{ scale: 0.98 }}
+ >
   <a asChild href="https://github.com/Jairotsb" target="_blank">
-    <svg 
+    <svg
       className="link-icon"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
@@ -58,11 +100,15 @@ import { DownloadSimple } from 'phosphor-react'
     </svg>
      @Jairotsb
   </a>
- </span> 
+ </motion.span>
 
- <div className="social-media">
+ <motion.div
+   className="social-media"
+   whileHover={{ scale: 1.05, borderColor: '#1E40AF' }}
+   whileTap={{ scale: 0.98 }}
+ >
   <a asChild href="https://www.instagram.com/jairotunisse" target="_blank">
-    <svg 
+    <svg
       className="link-icon"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
@@ -71,11 +117,15 @@ import { DownloadSimple } from 'phosphor-react'
     </svg>
      @jairotunisse
   </a>
- </div> 
+ </motion.div>
 
-  <span className="social-media">
+  <motion.span
+    className="social-media"
+    whileHover={{ scale: 1.05, borderColor: '#1E40AF' }}
+    whileTap={{ scale: 0.98 }}
+  >
   <a asChild href="mailto:jairo_tunisse@outlook.com">
-    <svg 
+    <svg
       className="link-icon"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
@@ -84,18 +134,35 @@ import { DownloadSimple } from 'phosphor-react'
     </svg>
      e-mail
      </a>
- </span> 
-</div>
+ </motion.span>
+</motion.div>
 
 ---
-<div align="center">
- <a
+
+<motion.div
+  align="center"
+  variants={fadeIn}
+  transition={{ duration: 0.5, delay: 0.3 }}
+>
+ <motion.a
     href="./cv-jairo-tunisse.pdf"
     download
     className="mt-6 inline-flex items-center gap-2 bg-sky-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-700 transition-colors shadow-md"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
   >
     <DownloadSimple size={20} />
     Meu Currículo
-  </a>
-</div>
+  </motion.a>
+</motion.div>
+
 ---
+
+<motion.div
+  variants={fadeIn}
+  transition={{ duration: 0.5, delay: 0.4 }}
+>
+  <Timeline />
+</motion.div>
+
+</motion.div>
