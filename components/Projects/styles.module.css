@@ -125,6 +125,38 @@
   border: 1px solid rgba(30, 64, 175, 0.3);
 }
 
+.badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badgeESHGO {
+  background: linear-gradient(135deg, #3B82F6, #1E40AF);
+  color: white;
+  border: 1px solid #1E40AF;
+}
+
+.badgeFAB {
+  background: linear-gradient(135deg, #10B981, #059669);
+  color: white;
+  border: 1px solid #059669;
+}
+
+.badgeOpenSource {
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+  color: white;
+  border: 1px solid #D97706;
+}
+
+/* Institutional Projects Section */
+.institutionalSection {
+  margin-bottom: 3rem;
+}
+
 /* Repositories Section */
 .repositoriesSection {
   margin-top: 1rem;

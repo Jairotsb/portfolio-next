@@ -3,6 +3,40 @@ type: page
 title: Projetos
 date: 2024-03-12
 ---
+
+import { DownloadSimple } from '@phosphor-icons/react'
+import { motion } from 'framer-motion'
+import Timeline from '../components/Timeline'
+
+export const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+}
+
+export const stagger = {
+  visible: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
+<motion.div
+  initial="hidden"
+  animate="visible"
+  variants={stagger}
+>
+
+    <motion.h2
+        className="text-center"
+        variants={fadeIn}
+        transition={{ duration: 0.5 }}
+        align="center"
+    >
+        Projetos
+    </motion.h2>
+</motion.div>
+
 import  Projects  from '../components/Projects';
 
 

@@ -3,14 +3,20 @@ html, body, #__next{
   transition: all 0.2s !important;
 }
 
+
 .profile {
   width: 12rem;
-  margin: 0.1rem 1.8rem 0 0;
+  margin: 0.1rem 2.5rem 0 0;
   border-radius: 8px;
 
   @media (max-width: 768px) {
     width: 8rem;
   }
+}
+
+article h1 {
+  text-align: center;
+  display: none;
 }
 
 article {
@@ -22,6 +28,7 @@ article {
 .bio {
   line-height: 1.5rem;
   text-align: justify;
+  margin: 1.5rem 0 0 0.5rem;
 }
 
 .work-link {
@@ -36,7 +43,7 @@ article {
   
   display: flex;
   align-items: center;
-  margin: 0 0.5rem 0 0;
+  margin: 2.5rem 0.5rem 0 0;
 
   @media(max-width: 768px) {
     margin-left: 0.8rem;

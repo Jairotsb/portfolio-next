@@ -22,26 +22,26 @@
   margin: 0.2rem 0 1.4rem 0;
 }
 
-.timeline {
-  position: relative;
-  padding-left: 0;
+.educationList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.timelineItem {
+.educationItem {
   display: flex;
   gap: 1rem;
   position: relative;
 }
 
-.timelineLine {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.iconWrapper {
   flex-shrink: 0;
   width: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.timelineDot {
+.icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -56,32 +56,24 @@
   transition: all 0.3s ease;
 }
 
-.currentDot {
+.currentIcon {
   background: #1E40AF;
   color: white;
   box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.2);
 }
 
-.timelineConnector {
-  width: 2px;
+.educationContent {
   flex: 1;
-  min-height: 20px;
-  background: linear-gradient(to bottom, #1E40AF, rgba(30, 64, 175, 0.3));
-  margin: 4px 0;
-}
-
-.timelineContent {
-  flex: 1;
-  padding: 0.5rem 1rem 2rem 0.5rem;
+  padding: 0.5rem 1rem 1rem 0.5rem;
   border-radius: 8px;
   transition: all 0.2s ease;
 }
 
-.timelineContent:hover {
+.educationContent:hover {
   background: rgba(30, 64, 175, 0.05);
 }
 
-.timelineHeader {
+.educationHeader {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -90,14 +82,14 @@
   flex-wrap: wrap;
 }
 
-.role {
+.degree {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
 
-.period {
+.status {
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.25rem 0.6rem;
@@ -108,21 +100,21 @@
   white-space: nowrap;
 }
 
-.currentPeriod {
+.currentStatus {
   background: #1E40AF;
   color: white;
   border-color: #1E40AF;
 }
 
-.companyInfo {
+.institutionInfo {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   flex-wrap: wrap;
 }
 
-.company {
+.institution {
   font-size: 0.9rem;
   font-weight: 600;
   color: #3B82F6;
@@ -136,54 +128,31 @@
   gap: 0.25rem;
 }
 
-.description {
+.period {
   font-size: 0.85rem;
-  line-height: 1.6;
-  opacity: 0.85;
+  opacity: 0.7;
   margin: 0;
-}
-
-.achievementsList {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0 0;
-}
-
-.achievementItem {
-  font-size: 0.8rem;
-  line-height: 1.5;
-  opacity: 0.75;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-
-.checkIcon {
-  color: #22C55E;
-  flex-shrink: 0;
-  margin-top: 0.15rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .timelineHeader {
+  .educationHeader {
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  .role {
+  .degree {
     font-size: 0.9rem;
   }
 
-  .companyInfo {
+  .institutionInfo {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
   }
 
-  .timelineContent {
-    padding: 0.5rem 0 1.5rem 0.5rem;
+  .educationContent {
+    padding: 0.5rem 0 1rem 0.5rem;
   }
 
   .headerTitle {
