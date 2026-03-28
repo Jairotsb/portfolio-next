@@ -4,15 +4,15 @@
         <description><![CDATA[Jairo Tunisse]]></description>
         <link>https://www.jairotunisse.dev</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Mar 2026 00:33:45 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Mar 2026 18:31:33 GMT</lastBuildDate>
         <item>
-            <title><![CDATA[Chega de cursos? Estratégias para Automatizar o Aprendizado e Ir Além dos Cursos tradicionais.]]></title>
-            <description><![CDATA[Este post tem como propósito evidenciar que é plenamente viável tornar-se um programador competente (ou iniciar nesse trajeto) sem desembolsar dinheiro em cursos online...]]></description>
-            <link>/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</link>
-            <guid isPermaLink="true">/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</guid>
+            <title><![CDATA[GUIA - Utilizando fontawesome com react e typescript]]></title>
+            <description><![CDATA[Neste artigo, irei descrever os passos para utilizar uma das bibiotecas de ícones mais legais...]]></description>
+            <link>/blog/guia-utilizando-fontawesome-com-typescript-e-react</link>
+            <guid isPermaLink="true">/blog/guia-utilizando-fontawesome-com-typescript-e-react</guid>
             <category><![CDATA[soft-skills]]></category>
             <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
-            <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
+            <pubDate>Tue, 12 Mar 2024 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Pensou em criar um projeto? Leia isso.]]></title>
@@ -24,13 +24,13 @@
             <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[GUIA - Utilizando fontawesome com react e typescript]]></title>
-            <description><![CDATA[Neste artigo, irei descrever os passos para utilizar uma das bibiotecas de ícones mais legais...]]></description>
-            <link>/blog/guia-utilizando-fontawesome-com-typescript-e-react</link>
-            <guid isPermaLink="true">/blog/guia-utilizando-fontawesome-com-typescript-e-react</guid>
+            <title><![CDATA[Chega de cursos? Estratégias para Automatizar o Aprendizado e Ir Além dos Cursos tradicionais.]]></title>
+            <description><![CDATA[Este post tem como propósito evidenciar que é plenamente viável tornar-se um programador competente (ou iniciar nesse trajeto) sem desembolsar dinheiro em cursos online...]]></description>
+            <link>/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</link>
+            <guid isPermaLink="true">/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</guid>
             <category><![CDATA[soft-skills]]></category>
             <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
-            <pubDate>Tue, 12 Mar 2024 00:00:00 GMT</pubDate>
+            <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
