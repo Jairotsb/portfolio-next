@@ -4,16 +4,7 @@
         <description><![CDATA[Jairo Tunisse]]></description>
         <link>https://www.jairotunisse.dev</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 28 Mar 2026 18:31:33 GMT</lastBuildDate>
-        <item>
-            <title><![CDATA[GUIA - Utilizando fontawesome com react e typescript]]></title>
-            <description><![CDATA[Neste artigo, irei descrever os passos para utilizar uma das bibiotecas de ícones mais legais...]]></description>
-            <link>/blog/guia-utilizando-fontawesome-com-typescript-e-react</link>
-            <guid isPermaLink="true">/blog/guia-utilizando-fontawesome-com-typescript-e-react</guid>
-            <category><![CDATA[soft-skills]]></category>
-            <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
-            <pubDate>Tue, 12 Mar 2024 00:00:00 GMT</pubDate>
-        </item>
+        <lastBuildDate>Tue, 31 Mar 2026 16:17:13 GMT</lastBuildDate>
         <item>
             <title><![CDATA[Pensou em criar um projeto? Leia isso.]]></title>
             <description><![CDATA[O objetivo deste post é mostrar que, temos que desenvolver melhor um projeto após realmente valer a pena cria-lo...]]></description>
@@ -22,6 +13,15 @@
             <category><![CDATA[soft-skills]]></category>
             <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
             <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[GUIA - Utilizando fontawesome com react e typescript]]></title>
+            <description><![CDATA[Neste artigo, irei descrever os passos para utilizar uma das bibiotecas de ícones mais legais...]]></description>
+            <link>/blog/guia-utilizando-fontawesome-com-typescript-e-react</link>
+            <guid isPermaLink="true">/blog/guia-utilizando-fontawesome-com-typescript-e-react</guid>
+            <category><![CDATA[soft-skills]]></category>
+            <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
+            <pubDate>Tue, 12 Mar 2024 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Chega de cursos? Estratégias para Automatizar o Aprendizado e Ir Além dos Cursos tradicionais.]]></title>
