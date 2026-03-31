@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 import { api } from "../../lib/api";
@@ -186,10 +187,12 @@ export default function Projects() {
               >
                 <div className={styles.featuredImageContainer}>
                   {project.image && (
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
                       className={styles.featuredImage}
+                      width={600}
+                      height={400}
                     />
                   )}
                 </div>
@@ -242,10 +245,12 @@ export default function Projects() {
               >
                 <div className={styles.featuredImageContainer}>
                   {project.image && (
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
                       className={styles.featuredImage}
+                      width={600}
+                      height={400}
                     />
                   )}
                 </div>
@@ -292,7 +297,7 @@ export default function Projects() {
         </div>
         <div className={styles.divider}></div>
 
-        {repositories.map((repository, index) => (
+        {repositories.map((repository) => (
           <motion.div
             key={repository.id}
             className={styles.card}

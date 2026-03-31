@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./styles.module.css";
 import { X } from "@phosphor-icons/react";
@@ -127,10 +128,12 @@ export default function CourseGallery() {
             onClick={() => setSelectedCourse(course)}
           >
             <div className={styles.frameInner}>
-              <img
+              <Image
                 src={course.image}
                 alt={course.name}
                 className={styles.courseImage}
+                width={400}
+                height={300}
               />
             </div>
             <div className={styles.courseName}>{course.name}</div>
@@ -162,10 +165,12 @@ export default function CourseGallery() {
               variants={imageVariants}
               onClick={(e) => e.stopPropagation()}
             >
-              <img
+              <Image
                 src={selectedCourse.image}
                 alt={selectedCourse.name}
                 className={styles.modalImage}
+                width={800}
+                height={600}
               />
               <p className={styles.modalTitle}>{selectedCourse.name}</p>
             </motion.div>
