@@ -8,9 +8,9 @@ import { TimelineExperience } from "./types";
 const experiencesData: TimelineExperience[] = [
   {
     id: 'eshgo-founder',
-    role: 'Fundador & Desenvolvedor Full Stack',
+    role: 'CTO',
     company: 'ESHGO Software House',
-    location: 'São Paulo, SP',
+    location: 'Lorena, SP',
     period: 'Novembro 2023 - Presente',
     startDate: '2023-11-01',
     endDate: null,
@@ -18,16 +18,15 @@ const experiencesData: TimelineExperience[] = [
     type: 'work',
     description: 'Fundador de software house com portfólio de produtos SaaS (HeartPass, Blumily, LEXFY) e projetos sob demanda. Arquitetura de soluções serverless, integração com APIs de pagamento (Stripe, Mercado Pago), e liderança técnica de projetos.',
     achievements: [
-      'Desenvolveu HeartPass, plataforma SaaS de ticketing com integração Mercado Pago',
-      'Projetou Blumily, micro-SaaS de diário de gravidez com armazenamento via Cloudflare R2',
-      'Criou LEXFY, assistente jurídico com IA usando Gemini API e modelo de assinaturas',
-      'Desenvolveu landing pages e sistemas web completos para clientes (Kyvus, Celta Eventos)'
+      'Desenvolvimento: HeartPass, plataforma SaaS de ticketing com integração Mercado Pago',
+      'Desenvolvimento: LEXFY, assistente jurídico com IA usando Gemini API e modelo de assinaturas',
+      'Desenvolvimento de landing pages e sistemas web completos para clientes (Kyvus, Celta Eventos)'
     ]
   },
   {
     id: 'eshgo-tech-writer',
     role: 'Tech Writer',
-    company: 'ESHGO Soluções Tecnológicas',
+    company: 'ESHGO Software House',
     location: 'Lorena, SP',
     period: '2025 - Presente',
     startDate: '2025-01-01',
@@ -39,7 +38,7 @@ const experiencesData: TimelineExperience[] = [
   },
   {
     id: 'fab-specialist',
-    role: 'Especialista em Infraestrutura de TI & Monitoramento de Redes',
+    role: 'Especialista em Infraestrutura de TI & Monitoramento de Redes | DEVOPS',
     company: 'Força Aérea Brasileira (FAB) – EEAR',
     location: 'Guaratinguetá, SP',
     period: 'Março 2020 - Presente',
@@ -57,21 +56,8 @@ const experiencesData: TimelineExperience[] = [
     ]
   },
   {
-    id: 'fab-sergeant',
-    role: 'Efetivo Militar (3º Sgt) - TI',
-    company: 'EEAR - Força Aérea Brasileira',
-    location: 'Guaratinguetá, SP',
-    period: 'Março 2022 - Presente',
-    startDate: '2022-03-01',
-    endDate: null,
-    current: true,
-    type: 'work',
-    description: 'Promovido a 3º Sargento. Especialização em monitoramento de redes, desenvolvimento de ferramentas web e liderança técnica.',
-    achievements: []
-  },
-  {
     id: 'fab-auxiliary',
-    role: 'Auxiliar Técnico - TI',
+    role: 'Auxiliar Técnico - TI ',
     company: 'EEAR - Força Aérea Brasileira',
     location: 'Guaratinguetá, SP',
     period: 'Março 2020 - Março 2022',

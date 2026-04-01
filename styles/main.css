@@ -104,8 +104,8 @@ span.nx-cursor-pointer.nx-p-2.nx-text-current:hover{
   border: 0px;
 }
 
-path {
-  fill: var(--shiki-color-text)
+.link-icon path {
+  fill: currentColor;
 }
 
 .text-legend {
