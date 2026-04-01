@@ -20,21 +20,9 @@ const experiencesData: TimelineExperience[] = [
     achievements: [
       'Desenvolvimento: HeartPass, plataforma SaaS de ticketing com integração Mercado Pago',
       'Desenvolvimento: LEXFY, assistente jurídico com IA usando Gemini API e modelo de assinaturas',
-      'Desenvolvimento de landing pages e sistemas web completos para clientes (Kyvus, Celta Eventos)'
+      'Desenvolvimento de landing pages e sistemas web completos para clientes',
+      'Produção de artigos sobre tecnologias emergentes, tutoriais e melhores práticas em TI para o blog técnico da empresa.'
     ]
-  },
-  {
-    id: 'eshgo-tech-writer',
-    role: 'Tech Writer',
-    company: 'ESHGO Software House',
-    location: 'Lorena, SP',
-    period: '2025 - Presente',
-    startDate: '2025-01-01',
-    endDate: null,
-    current: true,
-    type: 'work',
-    description: 'Produção de artigos sobre tecnologias emergentes, tutoriais e melhores práticas em TI para o blog técnico da empresa.',
-    achievements: []
   },
   {
     id: 'fab-specialist',
@@ -52,22 +40,10 @@ const experiencesData: TimelineExperience[] = [
       'Criou Yggdrasil, navegador institucional com Electron dual-engine',
       'Automatizou configuração de estações Linux Mint via script (eear_setup.sh)',
       'Diagnosticou e solucionou problemas complexos de rede (loop Layer 2, MAC flapping)',
-      'Liderou migração de sistemas legados para Windows 11 e Linux (+1.000 equipamentos)'
+      'Liderou migração de sistemas legados para Windows 11 e Linux (+1.000 equipamentos)',
+      'Suporte técnico, manutenção de sistemas e computadores. Primeiro contato com infraestrutura de larga escala.'
     ]
   },
-  {
-    id: 'fab-auxiliary',
-    role: 'Auxiliar Técnico - TI ',
-    company: 'EEAR - Força Aérea Brasileira',
-    location: 'Guaratinguetá, SP',
-    period: 'Março 2020 - Março 2022',
-    startDate: '2020-03-01',
-    endDate: '2022-03-01',
-    current: false,
-    type: 'work',
-    description: 'Suporte técnico, manutenção de sistemas e computadores. Primeiro contato com infraestrutura de larga escala.',
-    achievements: []
-  }
 ];
 
 // Sort by most recent first

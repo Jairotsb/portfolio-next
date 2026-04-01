@@ -11,7 +11,7 @@ const allProjects: Project[] = [
   // === FEATURED PROJECTS ===
   {
     id: 'heartpass',
-    title: 'HeartPass (ilovtks)',
+    title: 'HeartPass',
     description: 'Plataforma SaaS de venda de ingressos com dashboard administrativo, integração Mercado Pago e arquitetura serverless. Simplificou fluxo de pagamento de 3 camadas para abordagem direta via SDK.',
     technologies: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Radix UI', 'Mercado Pago SDK', 'Vercel'],
     link: 'https://heartpass.com.br',
@@ -19,17 +19,6 @@ const allProjects: Project[] = [
     category: 'SaaS',
     featured: true,
     image: '/projects/heartpass.png'
-  },
-  {
-    id: 'blumily',
-    title: 'Blumily',
-    description: 'Micro-SaaS de diário digital de gravidez com modelo freemium, armazenamento otimizado via Cloudflare R2, plano de monetização e estratégia de marketing para Instagram/TikTok.',
-    technologies: ['Next.js 16', 'TypeScript', 'Tailwind v4', 'Supabase', 'Stripe', 'Cloudflare R2'],
-    link: 'https://blumily.com',
-    badge: 'ESHGO',
-    category: 'SaaS',
-    featured: true,
-    image: '/projects/blumily.png'
   },
   {
     id: 'lexfy',
@@ -96,7 +85,17 @@ const allProjects: Project[] = [
     link: null,
     category: 'Landing Page',
     featured: false
-  }
+  }, 
+    {
+    id: 'blumily',
+    title: 'Blumily',
+    description: 'Micro-SaaS de diário digital de gravidez com modelo freemium, armazenamento otimizado via Cloudflare R2, plano de monetização e estratégia de marketing para Instagram/TikTok.',
+    technologies: ['Next.js 16', 'TypeScript', 'Tailwind v4', 'Supabase', 'Stripe', 'Cloudflare R2'],
+    link: 'https://blumily.app',
+    category: 'SaaS',
+    featured: true,
+    image: '/projects/blumily.png'
+  },
 ];
 
 const featuredProjects = allProjects.filter(p => p.featured);

@@ -35,9 +35,6 @@ export default function Stack() {
         transition={{ duration: 0.5 }}
       >
         <h1 className={styles.title}>Stack Técnico</h1>
-        <p className={styles.subtitle}>
-          Competências desenvolvidas ao longo de 8 anos de experiência em desenvolvimento e infraestrutura
-        </p>
       </motion.div>
 
       <motion.div
