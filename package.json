@@ -11,9 +11,9 @@
     "axios": "^1.7.9",
     "framer-motion": "^11.18.2",
     "gray-matter": "^4.0.3",
-    "next": "^16.2.1",
-    "nextra": "^4.6.1",
-    "nextra-theme-blog": "^4.6.1",
+    "next": "^15.5.14",
+    "nextra": "^3.3.1",
+    "nextra-theme-blog": "^3.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rss": "^1.2.2"
@@ -29,7 +29,7 @@
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "eslint": "^9.0.0",
-    "eslint-config-next": "^16.2.1",
+    "eslint-config-next": "^15.5.14",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"
   }
