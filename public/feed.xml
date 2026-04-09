@@ -4,7 +4,16 @@
         <description><![CDATA[Jairo Tunisse]]></description>
         <link>https://www.jairotunisse.dev</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 01 Apr 2026 00:25:18 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Apr 2026 00:24:26 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Chega de cursos? Estratégias para Automatizar o Aprendizado e Ir Além dos Cursos tradicionais.]]></title>
+            <description><![CDATA[Este post tem como propósito evidenciar que é plenamente viável tornar-se um programador competente (ou iniciar nesse trajeto) sem desembolsar dinheiro em cursos online...]]></description>
+            <link>/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</link>
+            <guid isPermaLink="true">/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</guid>
+            <category><![CDATA[soft-skills]]></category>
+            <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
+            <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[GUIA - Utilizando fontawesome com react e typescript]]></title>
             <description><![CDATA[Neste artigo, irei descrever os passos para utilizar uma das bibiotecas de ícones mais legais...]]></description>
@@ -22,15 +31,6 @@
             <category><![CDATA[soft-skills]]></category>
             <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
             <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Chega de cursos? Estratégias para Automatizar o Aprendizado e Ir Além dos Cursos tradicionais.]]></title>
-            <description><![CDATA[Este post tem como propósito evidenciar que é plenamente viável tornar-se um programador competente (ou iniciar nesse trajeto) sem desembolsar dinheiro em cursos online...]]></description>
-            <link>/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</link>
-            <guid isPermaLink="true">/blog/chega-de-cursos-estrategias-para-automatizar-o-aprendizado-e-ir-alem-dos-cursos-tradicionais</guid>
-            <category><![CDATA[soft-skills]]></category>
-            <dc:creator><![CDATA[Jairo Tunisse]]></dc:creator>
-            <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

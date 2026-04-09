@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 import { Briefcase, MapPin, CheckCircle } from "@phosphor-icons/react";
 import { TimelineExperience } from "./types";
+import { useDictionary } from "../../context/DictionaryContext";
 
 // Experiências profissionais completas conforme SPEC
 const experiencesData: TimelineExperience[] = [
@@ -73,10 +74,12 @@ const itemVariants = {
 };
 
 export default function Timeline() {
+  const dict = useDictionary();
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h6 className={styles.headerTitle}>Experiência Profissional</h6>
+        <h6 className={styles.headerTitle}>{dict.career.experience}</h6>
       </div>
       <div className={styles.divider}></div>
 
@@ -106,7 +109,7 @@ export default function Timeline() {
               <div className={styles.timelineHeader}>
                 <h3 className={styles.role}>{exp.role}</h3>
                 <span className={`${styles.period} ${exp.current ? styles.currentPeriod : ''}`}>
-                  {exp.period}
+                  {exp.current ? exp.period.replace("Presente", dict.career.present) : exp.period}
                 </span>
               </div>
 

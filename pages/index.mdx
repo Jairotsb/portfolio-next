@@ -4,8 +4,8 @@ title: Início
 date: 2024-03-12
 ---
 
-import { DownloadSimple } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
+import { HomeContent } from '../components/HomeContent'
 
 export const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -39,11 +39,7 @@ export const stagger = {
 
 <motion.div variants={fadeIn} transition={{ duration: 0.5, delay: 0.1 }}>
 <img align="left" className="profile" src="https://github.com/Jairotsb.png"/>
- <div className="bio">
-Desenvolvedor Full Stack com **8 anos de experiência** em JavaScript e ecossistema React, aliando sólida formação em Engenharia da Computação a **6 anos** de atuação em infraestrutura de TI na Força Aérea Brasileira.
-
-**CTO** | [ESHGO Software House](https://eshgo.com.br) | Seção de tecnologia da informação - **Força Aérea Brasileira** | Especialista em monitoramento de redes em larga escala (+3.000 Ativos) | **Engenharia da Computação** (Uniamérica, 2027)
-</div>
+<HomeContent />
 </motion.div>
 
 <motion.div
@@ -123,23 +119,5 @@ Desenvolvedor Full Stack com **8 anos de experiência** em JavaScript e ecossist
  </motion.span>
 </motion.div>
 
----
-
-<motion.div
-  align="center"
-  variants={fadeIn}
-  transition={{ duration: 0.5, delay: 0.3 }}
->
- <motion.a
-    href="./cv-jairo-tunisse.pdf"
-    download
-    className="mt-6 inline-flex items-center gap-2 bg-sky-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-700 transition-colors shadow-md"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <DownloadSimple size={20} />
-    Meu Currículo
-  </motion.a>
-</motion.div>
 
 </motion.div>

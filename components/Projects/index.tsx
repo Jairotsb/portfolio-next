@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import { api } from "../../lib/api";
 import { GitPullRequest, Star, ArrowSquareOut } from "@phosphor-icons/react";
 import { Project } from "./types";
+import { useDictionary } from "../../context/DictionaryContext";
 
 // Projetos completos conforme SPEC
 const allProjects: Project[] = [
@@ -133,6 +134,7 @@ const itemVariants = {
 };
 
 export default function Projects() {
+  const dict = useDictionary();
   const [repositories, setRepositories] = useState<RepositoryProps[]>([]);
 
   async function fetchMainRepositories() {
@@ -160,7 +162,7 @@ export default function Projects() {
         variants={containerVariants}
       >
         <div className={styles.sectionHeader}>
-          <h6 className={styles.headerTitle}>Projetos Realizados</h6>
+          <h6 className={styles.headerTitle}>{dict.projects.completedProjects}</h6>
         </div>
         <div className={styles.divider}></div>
 
@@ -229,7 +231,7 @@ export default function Projects() {
           className={styles.institutionalSection}
         >
           <div className={styles.sectionHeader}>
-            <h6 className={styles.headerTitle}>Projetos Institucionais (FAB)</h6>
+            <h6 className={styles.headerTitle}>{dict.projects.institutionalProjects}</h6>
           </div>
           <div className={styles.divider}></div>
 
@@ -285,13 +287,13 @@ export default function Projects() {
         className={styles.repositoriesSection}
       >
         <div className={styles.githubHeader}>
-          <h6 className={styles.headerTitle}>Repositórios</h6>
+          <h6 className={styles.headerTitle}>{dict.projects.repositories}</h6>
           <a
             target="_blank"
             href="https://github.com/Jairotsb"
             className={styles.viewMore}
           >
-            Ver mais
+            {dict.projects.viewMore}
           </a>
         </div>
         <div className={styles.divider}></div>

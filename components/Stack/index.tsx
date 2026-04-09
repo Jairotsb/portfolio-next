@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { skillsData } from "./data";
 import SkillCard from "./SkillCard";
 import styles from "./styles.module.css";
+import { useDictionary } from "../../context/DictionaryContext";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,6 +27,8 @@ const categoryVariants = {
 };
 
 export default function Stack() {
+  const dict = useDictionary();
+
   return (
     <div className={styles.container}>
       <motion.div
@@ -34,7 +37,7 @@ export default function Stack() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className={styles.title}>Stack Técnico</h1>
+        <h1 className={styles.title}>{dict.stack.pageTitle}</h1>
       </motion.div>
 
       <motion.div
@@ -51,7 +54,7 @@ export default function Stack() {
           >
             <h2 className={styles.categoryTitle}>
               <span className={styles.categoryIcon}>{category.icon}</span>
-              {category.name}
+              {dict.stack.categories[category.id as keyof typeof dict.stack.categories]}
             </h2>
             <div className={styles.skillsList}>
               {category.skills.map(skill => (

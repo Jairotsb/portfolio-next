@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import { X } from "@phosphor-icons/react";
 import { courses } from "./data";
 import { Course } from "./types";
+import { useDictionary } from "../../context/DictionaryContext";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -64,6 +65,7 @@ const imageVariants = {
 };
 
 export default function CourseGallery() {
+  const dict = useDictionary();
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedInstitution, setSelectedInstitution] = useState<string>('All');
@@ -80,7 +82,7 @@ export default function CourseGallery() {
       {/* Filters */}
       <div className={styles.filters}>
         <div className={styles.filterGroup}>
-          <label className={styles.filterLabel}>Instituição:</label>
+          <label className={styles.filterLabel}>{dict.courses.filterInstitution}</label>
           <div className={styles.filterButtons}>
             {institutions.map(inst => (
               <button
@@ -88,14 +90,14 @@ export default function CourseGallery() {
                 className={`${styles.filterButton} ${selectedInstitution === inst ? styles.filterButtonActive : ''}`}
                 onClick={() => setSelectedInstitution(inst)}
               >
-                {inst}
+                {inst === 'All' ? dict.courses.all : inst}
               </button>
             ))}
           </div>
         </div>
 
         <div className={styles.filterGroup}>
-          <label className={styles.filterLabel}>Categoria:</label>
+          <label className={styles.filterLabel}>{dict.courses.filterCategory}</label>
           <div className={styles.filterButtons}>
             {categories.map(cat => (
               <button
@@ -103,7 +105,7 @@ export default function CourseGallery() {
                 className={`${styles.filterButton} ${selectedCategory === cat ? styles.filterButtonActive : ''}`}
                 onClick={() => setSelectedCategory(cat)}
               >
-                {cat}
+                {cat === 'All' ? dict.courses.all : cat}
               </button>
             ))}
           </div>

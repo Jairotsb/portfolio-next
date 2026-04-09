@@ -3,7 +3,6 @@ import { SkillCategory } from './types';
 export const skillsData: SkillCategory[] = [
   {
     id: 'frontend',
-    name: 'Front-end',
     icon: '🎨',
     skills: [
       { name: 'React.js', level: 'Expert', yearsOfExperience: 8 },
@@ -21,7 +20,6 @@ export const skillsData: SkillCategory[] = [
   },
   {
     id: 'backend',
-    name: 'Back-end',
     icon: '⚙️',
     skills: [
       { name: 'Node.js', level: 'Advanced', yearsOfExperience: 6 },
@@ -34,7 +32,6 @@ export const skillsData: SkillCategory[] = [
   },
   {
     id: 'mobile',
-    name: 'Mobile',
     icon: '📱',
     skills: [
       { name: 'React Native', level: 'Advanced', yearsOfExperience: 4 }
@@ -42,7 +39,6 @@ export const skillsData: SkillCategory[] = [
   },
   {
     id: 'database',
-    name: 'Banco de Dados',
     icon: '🗄️',
     skills: [
       { name: 'MongoDB', level: 'Advanced' },
@@ -53,7 +49,6 @@ export const skillsData: SkillCategory[] = [
   },
   {
     id: 'devops',
-    name: 'DevOps & Infraestrutura',
     icon: '🚀',
     skills: [
       { name: 'Docker', level: 'Intermediate' },
@@ -67,7 +62,6 @@ export const skillsData: SkillCategory[] = [
   },
   {
     id: 'network',
-    name: 'Redes & Segurança',
     icon: '🔒',
     skills: [
       { name: 'Cisco IOS (Catalyst 3850/2950)', level: 'Intermediate' },
@@ -79,7 +73,6 @@ export const skillsData: SkillCategory[] = [
   },
   {
     id: 'methodologies',
-    name: 'Metodologias & Soft Skills',
     icon: '🧠',
     skills: [
       { name: 'Scrum/Agile', level: 'Advanced' },

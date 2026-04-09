@@ -1,8 +1,18 @@
 const YEAR = new Date().getFullYear();
 export default {
   darkMode: true,
-  readMore: "Ver Mais",
-  dateFormatter: (date: Date) => `Criado em ${date.toLocaleDateString()}`,
+  readMore: "Read More",
+  dateFormatter: (date: Date) => {
+    const lang =
+      typeof document !== "undefined"
+        ? document.documentElement.lang
+        : "en";
+    return date.toLocaleDateString(lang === "pt" ? "pt-BR" : "en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  },
   footer: (
     <footer>
       <small>

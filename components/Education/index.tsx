@@ -2,13 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 import { GraduationCap, MapPin } from "@phosphor-icons/react";
+import { useDictionary } from "../../context/DictionaryContext";
 
 interface Education {
   id: string;
   degree: string;
   institution: string;
   period: string;
-  status: 'Cursando' | 'Concluído';
+  status: 'current' | 'completed';
   location: string;
 }
 
@@ -18,7 +19,7 @@ const education: Education[] = [
     degree: 'Bacharelado em Engenharia da Computação',
     institution: 'Universidade das Américas Descomplica – Uniamérica',
     period: '2024 - 2027 (previsão)',
-    status: 'Cursando',
+    status: 'current',
     location: 'EAD'
   },
   {
@@ -26,7 +27,7 @@ const education: Education[] = [
     degree: 'Técnico em Desenvolvimento de Sistemas',
     institution: 'ETEC – Escola Técnica Estadual (Centro Paula Souza)',
     period: '2018 - 2019',
-    status: 'Concluído',
+    status: 'completed',
     location: 'Cruzeiro, SP'
   }
 ];
@@ -54,10 +55,12 @@ const itemVariants = {
 };
 
 export default function Education() {
+  const dict = useDictionary();
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h6 className={styles.headerTitle}>Formação Acadêmica</h6>
+        <h6 className={styles.headerTitle}>{dict.career.education}</h6>
       </div>
       <div className={styles.divider}></div>
 
@@ -74,7 +77,7 @@ export default function Education() {
             variants={itemVariants}
           >
             <div className={styles.iconWrapper}>
-              <div className={`${styles.icon} ${edu.status === 'Cursando' ? styles.currentIcon : ''}`}>
+              <div className={`${styles.icon} ${edu.status === 'current' ? styles.currentIcon : ''}`}>
                 <GraduationCap size={18} weight="fill" />
               </div>
             </div>
@@ -85,8 +88,8 @@ export default function Education() {
             >
               <div className={styles.educationHeader}>
                 <h3 className={styles.degree}>{edu.degree}</h3>
-                <span className={`${styles.status} ${edu.status === 'Cursando' ? styles.currentStatus : ''}`}>
-                  {edu.status}
+                <span className={`${styles.status} ${edu.status === 'current' ? styles.currentStatus : ''}`}>
+                  {edu.status === 'current' ? dict.common.current : dict.common.completed}
                 </span>
               </div>
 
